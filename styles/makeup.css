@@ -32,25 +32,25 @@ font-size: 15px;
     background-size:100%;
     background-repeat: no-repeat;
     /* width: 100%; */
-    font-size: 120%;
+    font-size: 25px;
     color: white;
     text-align: center;
 
 }
 #ad>h1{
-    margin-top:10%;
+    margin-top:100px;
 }
 #features{
     display: flex;
     justify-content: space-between;
     /* margin-top: 20px; */
     font-size: 13px;
-    margin:1%;
+    margin: 20px;
 }
 #features>div>#sorting{
-height: 80%;
-width: 100%;
-padding-left:10px;
+height: 40px;
+width: 200px;
+padding-left: 10px;
 }
 #features>div>p{
     margin-bottom:5px;
@@ -64,15 +64,14 @@ margin: 100px;
 #products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:50px;
+    gap:70px;
     text-align: center;
-    padding:5%;
+    padding: 50px;
 }
 #products>div{
     /* border: 1px solid black; */
     padding:0px 20px 0px 20px;
     /* width:380px; */
-    height: fit-content;
 }
 #products>div>img{
     width: 100%;
@@ -85,7 +84,6 @@ cursor: pointer;
     border: 0.5px solid black;
     border-radius:0px;
     background-color: white;
-    padding: 5px;
 }
 #products>div>img+p{
     font-size: 16px;
@@ -93,7 +91,6 @@ cursor: pointer;
     line-height: 19px;
     font-family: "BBText Bold", Helvetica, Arial, sans-serif;
     cursor: pointer;
-    /* width: 20%; */
  } 
 #products>div>img+p~p{
     font-family: "BBText Regular", Helvetica, Arial, sans-serif;
@@ -126,18 +123,4 @@ cursor: pointer;
     cursor: pointer;
 }
 
-@media only screen and (min-width:700px) and (max-width:900px) {
-    #products{
-        grid-template-columns: repeat(2,1fr);
-    }
- }
- @media only screen and (min-width:200px) and (max-width:700px){
-     
-    #products{
-        grid-template-columns: repeat(1,1fr);
-    }
-    #offers{
-        display: none;
-    }
- }
  

@@ -1,6 +1,13 @@
 #navbar {
   background-color: black;
   color: white;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
 
 #nb-p1 {
@@ -140,10 +147,15 @@
   margin: 10px 80px;
 }
 
-#nb-p1,
-#nb-p2 {
+#nb-p1 {
   display: grid;
   grid-template-columns: 25% 50% 25%;
+}
+#nb-p2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  background-color: #000;
 }
 
 #nb-logo {
@@ -286,7 +298,6 @@
 #nb-register-main a {
   color: black;
 }
-
 #nb-register-main a:hover {
   text-decoration: none;
 }
@@ -474,6 +485,7 @@
 /* navbar part 2 */
 
 #nb-menu {
+  /* max-width: 100%; */
   display: flex;
   align-items: center;
 }
@@ -503,7 +515,7 @@
   width: 100%;
 }
 
-.main-menu>li {
+.main-menu > li {
   display: inline-block;
   /* text-align: center; */
 }
@@ -548,13 +560,13 @@
   display: none;
 }
 
-.main-menu>li:hover .menu-sub {
+.main-menu > li:hover .menu-sub {
   z-index: 999;
   display: block;
   width: 100%;
 }
 
-.main-menu>li:hover {
+.main-menu > li:hover {
   text-decoration: underline;
   display: block;
 }
@@ -564,7 +576,7 @@
   margin: 10px;
 }
 
-.sub-category>li>a>div {
+.sub-category > li > a > div {
   color: black;
   margin: 20px;
   line-height: 20px;
@@ -591,15 +603,12 @@
 .sub-menu-main h5 {
   color: rgb(83, 83, 83);
 }
-
-.sub-menu-main>a:hover {
+.sub-menu-main > a:hover {
   text-decoration: none;
 }
-
-.sub-menu-main>a:hover h5 {
+.sub-menu-main > a:hover h5 {
   color: rgb(255, 68, 109);
 }
-
 .sub-menu-main a {
   color: #000;
 }
@@ -616,41 +625,25 @@
   margin: 0 auto;
 }
 
-nav {
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-#nav-scroll {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-}
-
 /* media queries */
 @media only screen and (max-width: 1100px) {
   .menu-sub-inner {
     width: 100%;
   }
 }
-
 @media only screen and (max-width: 1100px) {
   #nb-p1 {
     padding: 0px 10px;
   }
-
   #nb-query {
     padding: 20px 0px;
     margin: 10px;
   }
-
   #nb-p1,
   #nb-p2 {
     display: grid;
     grid-template-columns: 20% 50% 30%;
   }
-
   .main-menu a {
     color: #fff;
     display: block;
@@ -659,5 +652,5 @@ nav {
     margin: 0;
   }
 }
-
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+}

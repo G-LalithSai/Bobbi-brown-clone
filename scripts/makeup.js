@@ -79,12 +79,8 @@ price1.innerText=price
 let cart=document.createElement("button")
 cart.setAttribute("id","btn")
 cart.innerText="ADD TO BAG"
+let colormain=document.createElement("div")
 
-// let colormain=document.createElement("div")
-cart.addEventListener("click",function(){
-    let el={image,image1,name,category,discription,price,rating}
-storeincart(el)
-})
 
 let rating1=document.createElement("div")
 rating1.setAttribute("id","rating")
@@ -106,15 +102,12 @@ if(category.length==0){
     btn.style.visibility="hidden"
 }
 
-box.append(btn,img,name1,name2,rating1,price1,cart) 
+box.append(btn,img,name1,name2,colormain,rating1,price1,cart) 
 container.append(box)
     })
 
 }
-let storeincart=(el)=>{
-// console.log(el)
-localStorage.setItem("cart",JSON.stringify(el))
-}
+
 let select=document.querySelector("#sorting")
 select.addEventListener("change",function(){
     console.log(select.value)

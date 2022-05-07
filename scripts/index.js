@@ -178,8 +178,6 @@ document
     document.getElementById("nb-register").style.display = "none";
   });
 
-
-  
 // part of the navbar 3
 
 // login changes
@@ -202,8 +200,6 @@ document
   });
 // navbar end
 //container starts
-
-
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -249,82 +245,81 @@ document.getElementById("nextright").addEventListener("click", () => {
   plusSlides(1);
 });
 let datanew = [
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_ERFJ12_1080x1080_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
-        name :"SKIN CONCEALER STICK",
-        rating:"4",
-        price: "1299"
-    },
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPYL03_600x600_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_ERFJ12_1080x1080_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    name: "SKIN CONCEALER STICK",
+    rating: "4",
+    price: "1299",
+  },
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPYL03_600x600_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
 
-        name :"FACE AND CHEEK PALETTE",
-        rating:"4",
-        price: "1299"
-    },
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E96E40_600x600_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    name: "FACE AND CHEEK PALETTE",
+    rating: "4",
+    price: "1299",
+  },
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E96E40_600x600_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
 
-        name :"LONG-WEAR CREAM SHADOW STICK",
-        rating:"4",
-        price: "1299"
-    }
- 
+    name: "LONG-WEAR CREAM SHADOW STICK",
+    rating: "4",
+    price: "1299",
+  },
 ];
 let datamini = [
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERLC01_600x600_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERLC01_600x600_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
 
-        name :"SKIN CONCEALER STICK",
-        rating:"4",
-        price: "1299"
-    },
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPGN01_600x600_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    name: "SKIN CONCEALER STICK",
+    rating: "4",
+    price: "1299",
+  },
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPGN01_600x600_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
 
-        name :"FACE AND CHEEK PALETTE",
-        rating:"4",
-        price: "1299"
-    },
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EPH201_1080x1080_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    name: "FACE AND CHEEK PALETTE",
+    rating: "4",
+    price: "1299",
+  },
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EPH201_1080x1080_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
 
-        name :"LONG-WEAR CREAM SHADOW STICK",
-        rating:"4",
-        price: "1299"
-    }
+    name: "LONG-WEAR CREAM SHADOW STICK",
+    rating: "4",
+    price: "1299",
+  },
 ];
 let datatara = [
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH101_600x600_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH101_600x600_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
 
-        name :"SKIN CONCEALER STICK",
-        rating:"4",
-        price: "1299"
-    },
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EER904_1080x1080_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    name: "SKIN CONCEALER STICK",
+    rating: "4",
+    price: "1299",
+  },
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EER904_1080x1080_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
 
-        name :"FACE AND CHEEK PALETTE",
-        rating:"4",
-        price: "1299"
-    },
-    {
-        url :"https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EL1104_1080x1080_0.jpg",
-        url2 :"https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    name: "FACE AND CHEEK PALETTE",
+    rating: "4",
+    price: "1299",
+  },
+  {
+    url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EL1104_1080x1080_0.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
 
-        name :"LONG-WEAR CREAM SHADOW STICK",
-        rating:"4",
-        price: "1299"
-    }
+    name: "LONG-WEAR CREAM SHADOW STICK",
+    rating: "4",
+    price: "1299",
+  },
 ];
 let data2 = [
   {
@@ -363,19 +358,19 @@ let mini_option = document.getElementById("mini_option");
 let taras_option = document.getElementById("taras_option");
 
 let newOption = () => {
-    appendItems(datanew);
+  appendItems(datanew);
   mini_option.style.fontWeight = "lighter";
   taras_option.style.fontWeight = "lighter";
   new_option.style.fontWeight = "bold";
 };
 let miniOption = () => {
-    appendItems(datamini);
+  appendItems(datamini);
   mini_option.style.fontWeight = "bold";
   taras_option.style.fontWeight = "lighter";
   new_option.style.fontWeight = "lighter";
 };
 let tarasOption = () => {
-    appendItems(datatara);
+  appendItems(datatara);
   mini_option.style.fontWeight = "lighter";
   taras_option.style.fontWeight = "bold";
   new_option.style.fontWeight = "lighter";
@@ -405,18 +400,17 @@ function appendLAst(data) {
 }
 appendLAst(data2);
 
-;
-function appendItems(data){
-    let division = document.getElementById("scroll_side");
-    division.innerHTML = null;
-    data.forEach(el => {
+function appendItems(data) {
+  let division = document.getElementById("scroll_side");
+  division.innerHTML = null;
+  data.forEach((el) => {
     let box = document.createElement("div");
     let image = document.createElement("img");
     image.src = el.url;
-    image.addEventListener("onmouseover",()=>{
-        () =>{
-image.src = el.url2;
-        };
+    image.addEventListener("onmouseover", () => {
+      () => {
+        image.src = el.url2;
+      };
     });
     let name = document.createElement("p");
     name.innerText = el.name;
@@ -427,12 +421,10 @@ image.src = el.url2;
     price.innerText = el.price;
     let button = document.createElement("button");
     button.innerText = "ADD TO CART";
-    box.append(image, name, rating, price,button);
+    box.append(image, name, rating, price, button);
     division.append(box);
-   
-});
+  });
 }
 appendItems(datanew);
-
 
 // container ends

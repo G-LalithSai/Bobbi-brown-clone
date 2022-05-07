@@ -91,11 +91,13 @@ let navbar = () => {
           </li>
         </ul>
         <div id="navbar-main2">
-          <img
-            id="nb-logo"
-            src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png"
-            alt=""
-          />
+          <a href="./index.html">
+            <img
+              id="nb-logo"
+              src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png"
+              alt=""
+            />
+          </a>
         </div>
         <div id="navbar-main3">
           <div id="nb-join">
@@ -292,7 +294,9 @@ let navbar = () => {
               </div>
             </div>
             <div>
-              <i class="fa-solid fa-basket-shopping"></i>
+              <a href="./cart.html">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -310,12 +314,12 @@ let navbar = () => {
           <div class="navcontainer nb-sticky">
             <ul class="main-menu">
               <li>
-                <a href="#">NEW</a>
+                <a href="./new.html">NEW</a>
                 <div class="menu-sub">
                   <div class="menu-sub-inner">
                     <ul class="sub-category">
                       <li>
-                        <a href="#">
+                        <a href="./new.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/new/20210811_BB_FY21_LuxeDefiningLipstick_Engage_Product_ShadeRange_NA_GNAV_600x300.jpg"
@@ -326,7 +330,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./new.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/GNAV/BB_Gnav_PC_Mitigation_BeautyEvent_Glow.jpg"
@@ -337,7 +341,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./new.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/GNAV/BB-FY22-MothersDay_Gnav_Giftguide_@2x.jpg"
@@ -348,7 +352,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./new.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/GNAV/20220215_BB_FY22_LWCSS_ShadeExt_GNAV_Global_Tile.jpg"
@@ -363,12 +367,12 @@ let navbar = () => {
                 </div>
               </li>
               <li>
-                <a href="#">BESTSELLERS</a>
+                <a href="./fav.html">BESTSELLERS</a>
                 <div class="menu-sub">
                   <div class="menu-sub-inner">
                     <ul class="sub-category">
                       <li>
-                        <a href="#">
+                        <a href="./fav.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/bestsellers/BB-PC-Gnav-Tile-01-B_@2x.jpg"
@@ -379,7 +383,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./fav.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/bestsellers/BB-PC-GNAV-LWCSS_450x300_@2x.jpg"
@@ -390,7 +394,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./fav.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/bestsellers/BB-PC-GNAV-Highlighters_450x300_@2x.jpg"
@@ -401,7 +405,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./fav.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/bestsellers/BB-PC-Gnav-Tile-04-B_@2x.jpg"
@@ -482,12 +486,12 @@ let navbar = () => {
                 </div>
               </li>
               <li>
-                <a href="#">MAKEUP</a>
+                <a href="./makeup.html">MAKEUP</a>
                 <div class="menu-sub">
                   <div class="menu-sub-inner">
                     <ul class="sub-category">
                       <li>
-                        <a href="#">
+                        <a href="./makeup.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/new/BB_PC_Ecomm_Mini_Bar_Gnav.jpg"
@@ -499,15 +503,19 @@ let navbar = () => {
                       </li>
                       <li>
                         <div class="sub-menu-main">
-                          <a href="#">
+                          <a href="./makeup.html">
                             <h5>FACE</h5>
                           </a>
                           <ul class="sub-menu">
-                            <li><a href="#">Foundation</a></li>
-                            <li><a href="#">Corrector & Concealer</a></li>
-                            <li><a href="#">Primer</a></li>
-                            <li><a href="#">Powder</a></li>
-                            <li><a href="#">Foundation Guide</a></li>
+                            <li><a href="./makeup.html">Foundation</a></li>
+                            <li>
+                              <a href="./makeup.html">Corrector & Concealer</a>
+                            </li>
+                            <li><a href="./makeup.html">Primer</a></li>
+                            <li><a href="./makeup.html">Powder</a></li>
+                            <li>
+                              <a href="./makeup.html">Foundation Guide</a>
+                            </li>
                           </ul>
                         </div>
                       </li>
