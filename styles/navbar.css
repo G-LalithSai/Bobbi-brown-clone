@@ -548,6 +548,7 @@
 }
 
 .main-menu > li:hover .menu-sub {
+  z-index: 999;
   display: block;
   width: 100%;
 }
