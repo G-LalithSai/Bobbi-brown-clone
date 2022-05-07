@@ -48,9 +48,9 @@ font-size: 15px;
     margin:1%;
 }
 #features>div>#sorting{
-height: 40px;
-width: 200px;
-padding-left: 10px;
+height: 80%;
+width: 100%;
+padding-left:10px;
 }
 #features>div>p{
     margin-bottom:5px;
@@ -69,7 +69,7 @@ margin: 100px;
     padding:5%;
 }
 #products>div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding:0px 20px 0px 20px;
     /* width:380px; */
     height: fit-content;
