@@ -49,17 +49,18 @@ let showing = (data)=>{
         let box1 = document.createElement("div");
         box1.setAttribute("id","box1");
         
-        let box = document.createElement("div");
-        box.setAttribute("id","di");
+        // let box = document.createElement("div");
+        // box.setAttribute("id","di");
         
         // let but=document.createElement("button");
         // but.innerText="TRY IT ON";
         // box.append(but);
         
         let div = document.createElement("div");
+        // div.setAttribute("id","div");
         let image = document.createElement("img");
         image.src = elem.image;
-        image.setAttribute("class","img");
+        image.setAttribute("class","img1");
         div.append(image);
         
         
