@@ -314,12 +314,12 @@ let navbar = () => {
           <div class="navcontainer nb-sticky">
             <ul class="main-menu">
               <li>
-                <a href="#">NEW</a>
+                <a href="./new.html">NEW</a>
                 <div class="menu-sub">
                   <div class="menu-sub-inner">
                     <ul class="sub-category">
                       <li>
-                        <a href="#">
+                        <a href="./new.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/new/20210811_BB_FY21_LuxeDefiningLipstick_Engage_Product_ShadeRange_NA_GNAV_600x300.jpg"
@@ -330,7 +330,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./new.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/GNAV/BB_Gnav_PC_Mitigation_BeautyEvent_Glow.jpg"
@@ -341,7 +341,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./new.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/GNAV/BB-FY22-MothersDay_Gnav_Giftguide_@2x.jpg"
@@ -352,7 +352,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./new.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/GNAV/20220215_BB_FY22_LWCSS_ShadeExt_GNAV_Global_Tile.jpg"
