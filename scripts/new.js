@@ -52,9 +52,9 @@ let showing = (data)=>{
         let box = document.createElement("div");
         box.setAttribute("id","di");
         
-        let but=document.createElement("button");
-        but.innerText="TRY IT ON";
-        box.append(but);
+        // let but=document.createElement("button");
+        // but.innerText="TRY IT ON";
+        // box.append(but);
         
         let div = document.createElement("div");
         let image = document.createElement("img");
