@@ -91,11 +91,13 @@ let navbar = () => {
           </li>
         </ul>
         <div id="navbar-main2">
-          <img
-            id="nb-logo"
-            src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png"
-            alt=""
-          />
+          <a href="./index.html">
+            <img
+              id="nb-logo"
+              src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png"
+              alt=""
+            />
+          </a>
         </div>
         <div id="navbar-main3">
           <div id="nb-join">
@@ -292,7 +294,9 @@ let navbar = () => {
               </div>
             </div>
             <div>
-              <i class="fa-solid fa-basket-shopping"></i>
+              <a href="./cart.html">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -363,12 +367,12 @@ let navbar = () => {
                 </div>
               </li>
               <li>
-                <a href="#">BESTSELLERS</a>
+                <a href="./fav.html">BESTSELLERS</a>
                 <div class="menu-sub">
                   <div class="menu-sub-inner">
                     <ul class="sub-category">
                       <li>
-                        <a href="#">
+                        <a href="./fav.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/bestsellers/BB-PC-Gnav-Tile-01-B_@2x.jpg"
@@ -379,7 +383,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./fav.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/bestsellers/BB-PC-GNAV-LWCSS_450x300_@2x.jpg"
@@ -390,7 +394,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./fav.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/bestsellers/BB-PC-GNAV-Highlighters_450x300_@2x.jpg"
@@ -401,7 +405,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./fav.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/bestsellers/BB-PC-Gnav-Tile-04-B_@2x.jpg"
@@ -482,12 +486,12 @@ let navbar = () => {
                 </div>
               </li>
               <li>
-                <a href="#">MAKEUP</a>
+                <a href="./makeup.html">MAKEUP</a>
                 <div class="menu-sub">
                   <div class="menu-sub-inner">
                     <ul class="sub-category">
                       <li>
-                        <a href="#">
+                        <a href="./makeup.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/new/BB_PC_Ecomm_Mini_Bar_Gnav.jpg"
@@ -499,15 +503,19 @@ let navbar = () => {
                       </li>
                       <li>
                         <div class="sub-menu-main">
-                          <a href="#">
+                          <a href="./makeup.html">
                             <h5>FACE</h5>
                           </a>
                           <ul class="sub-menu">
-                            <li><a href="#">Foundation</a></li>
-                            <li><a href="#">Corrector & Concealer</a></li>
-                            <li><a href="#">Primer</a></li>
-                            <li><a href="#">Powder</a></li>
-                            <li><a href="#">Foundation Guide</a></li>
+                            <li><a href="./makeup.html">Foundation</a></li>
+                            <li>
+                              <a href="./makeup.html">Corrector & Concealer</a>
+                            </li>
+                            <li><a href="./makeup.html">Primer</a></li>
+                            <li><a href="./makeup.html">Powder</a></li>
+                            <li>
+                              <a href="./makeup.html">Foundation Guide</a>
+                            </li>
                           </ul>
                         </div>
                       </li>

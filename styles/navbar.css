@@ -1,6 +1,13 @@
 #navbar {
   background-color: black;
   color: white;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
 
 #nb-p1 {
@@ -140,10 +147,15 @@
   margin: 10px 80px;
 }
 
-#nb-p1,
-#nb-p2 {
+#nb-p1 {
   display: grid;
   grid-template-columns: 25% 50% 25%;
+}
+#nb-p2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  background-color: #000;
 }
 
 #nb-logo {
@@ -473,6 +485,7 @@
 /* navbar part 2 */
 
 #nb-menu {
+  /* max-width: 100%; */
   display: flex;
   align-items: center;
 }
@@ -610,18 +623,6 @@
 .menu-sub-inner {
   width: 1440px;
   margin: 0 auto;
-}
-
-nav {
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-#nav-scroll {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
 }
 
 /* media queries */

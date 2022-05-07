@@ -1,7 +1,6 @@
-let select  = ()=>{
-    return `
+let select = () => {
+  return `
     <select id="sel">
-  
    <option value="1">1</option>
    <option value="2">2</option>
    <option value="3">3</option>
@@ -11,8 +10,7 @@ let select  = ()=>{
    <option value="7">7</option>
    <option value="8">8</option>
    <option value="9">9</option>
-
 </select> 
-    `
-}
+    `;
+};
 export default select;

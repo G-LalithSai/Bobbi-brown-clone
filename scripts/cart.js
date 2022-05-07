@@ -97,7 +97,9 @@ let i =0;
 let getProd = JSON.parse(localStorage.getItem("cart"))
 
 let c=0;
-getProd.forEach(el => {
+let sum =0;
+getProd.forEach((el,index) => {
+    sum += +(el.price);
     let innerbox = create("div");
     let box = create("div");
     let imgdiv = create("div")
@@ -110,23 +112,37 @@ getProd.forEach(el => {
     let price = create("p");
     let rating = create("p")
      let select= create("div")
+     let selectPriceDiv = create("div")
+     selectPriceDiv.setAttribute("id","selectPrice")
+     let removeDiv = create("div")
+     removeDiv.setAttribute("id","remove")
+     let i = create("i");
       select.innerHTML = sel;
     select.setAttribute("class","selectbtn")
     
     h4.innerText = el.category;
     h3.innerText =el.name;
+    i.setAttribute("class","fa-solid  fa-xmark")
     des.innerText =el.discription;
     price.innerText = `Rs :${el.price}`;
+    //price.style.textd
     rating.innerText=`size : MRP inclusive of all taxes | ${el.size}g`
+    rating.style.color = "#9daabd";
     //btn.innerText= "ADD TO CART";
+    selectPriceDiv.append(select,price)
     imgdiv.append(img)
-    innerbox.append(h4,h3,des,rating,price,select);
+    removeDiv.append(h3,i)
+    innerbox.append(h4,removeDiv,des,rating,selectPriceDiv);
     box.append(imgdiv,innerbox)
     document.getElementById("products").append(box)
    c++;
-
+  i.addEventListener("click",function(){
+      removeFromCart(el,index);
+  })
 });
+console.log(sum)
 document.querySelector("#noOfProduct").innerText = `(${c})`
+
 
 
 
@@ -172,3 +188,78 @@ let count =0;
     count++;
   }
   document.querySelector("#hide1").addEventListener("click", hideOffer)
+
+
+  // to remove from cart section:
+
+  let removeFromCart = (el,index)=>{
+      sum += - +(el.porice)
+  getProd.splice(index,1);
+  console.log("getProd :",getProd)
+  localStorage.setItem("cart",JSON.stringify(getProd))
+  window.location.reload();
+  }
+ console.log(getProd)
+
+
+ // sub-total amount --->
+ let subtotal = document.getElementById("subtotal");
+ let estimated_mrp =document.getElementById("estimated_mrp")
+ let subtotalAmount = ()=>{
+    subtotal.innerText =`₹ ${sum}`
+    estimated_mrp.innerText = `₹ ${sum}`
+    subtotal.style.color ="#000000";
+    subtotal.style.fontWeight="bold"
+    subtotal.style.fontSize = "20px"
+    subtotal.style.fontFamily   ="BBText Regular", "Helvetica", "Arial", "sans-serif";
+ }
+ subtotalAmount(sum);
+
+
+
+//  let qi =0;
+// document.getElementById("qty").addEventListener("click",myHidefun)
+// let hide_qty = document.getElementById("hide")
+// function myHidefun()
+// {  
+// if(qi%2===0)
+// {  qi++;
+//     hide_qty.style.display = "none";
+// qty.setAttribute("class","fa-solid fa-angle-up");
+// }
+// else if(qi%2!=0)
+// {  qi++;
+//     hide_qty.style.display = "block";
+// qty.setAttribute("class","fa-solid fa-angle-down");
+// }
+
+// }
+
+// document.querySelector("#no2").addEventListener("click",function(){
+//     myfn(this.innerText)
+// })
+// document.querySelector("#no3").addEventListener("click",function(){
+//     myfn(this.innerText)
+// })
+// document.querySelector("#no4").addEventListener("click",function(){
+//     myfn(this.innerText)
+// })
+// document.querySelector("#no5").addEventListener("click",function(){
+//     myfn(this.innerText)
+// })
+// document.querySelector("#no6").addEventListener("click",function(){
+//     myfn(this.innerText)
+// })
+// document.querySelector("#no7").addEventListener("click",function(){
+//     myfn(this.innerText)
+// })
+// document.querySelector("#no8").addEventListener("click",function(){
+//     myfn(this.innerText)
+// })
+
+// function myfn(a)
+
+// {
+   
+//     document.getElementById("net_qty").innerText =a;
+// }
