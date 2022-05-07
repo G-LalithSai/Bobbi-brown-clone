@@ -57,7 +57,6 @@ let showing = (data)=>{
         // box.append(but);
         
         let div = document.createElement("div");
-        // div.setAttribute("id","div");
         let image = document.createElement("img");
         image.src = elem.image;
         image.setAttribute("class","img1");
@@ -113,7 +112,7 @@ let showing = (data)=>{
         but1.innerText="ADD TO BAG";
         box2.append(but1);
         
-        box1.append(box, div, div1,box2);
+        box1.append(div, div1,box2);
         document.getElementById("show").append(box1);
     })
 };
