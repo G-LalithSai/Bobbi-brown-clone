@@ -113,7 +113,7 @@ body {
 
 }
 
-img {
+#container img {
     /* border: solid 1px red; */
     display: block;
     margin-left: auto;

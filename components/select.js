@@ -10,7 +10,7 @@ let select = () => {
    <option value="7">7</option>
    <option value="8">8</option>
    <option value="9">9</option>
-</select> 
+  </select> 
     `;
 };
-export default select;
+export { select };
