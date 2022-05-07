@@ -1,3 +1,6 @@
+*{
+    font-family:"BBSans Regular", Helvetica, Arial, sans-serif; ;
+}
 #container{
     width: 70%;
     margin: auto;
