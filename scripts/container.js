@@ -53,7 +53,7 @@ let datanew = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPYL03_600x600_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERE012_600x600_1.jpg",
 
     name: "FACE AND CHEEK PALETTE",
     rating: "4",
@@ -61,7 +61,7 @@ let datanew = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E96E40_600x600_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH201_600x600_1.jpg",
 
     name: "LONG-WEAR CREAM SHADOW STICK",
     rating: "4",
@@ -79,7 +79,7 @@ let datamini = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPGN01_600x600_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERE012_600x600_1.jpg",
 
     name: "FACE AND CHEEK PALETTE",
     rating: "4",
@@ -87,7 +87,7 @@ let datamini = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EPH201_1080x1080_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH201_600x600_1.jpg",
 
     name: "LONG-WEAR CREAM SHADOW STICK",
     rating: "4",
@@ -105,7 +105,7 @@ let datatara = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EER904_1080x1080_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERE012_600x600_1.jpg",
 
     name: "FACE AND CHEEK PALETTE",
     rating: "4",
@@ -113,7 +113,7 @@ let datatara = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EL1104_1080x1080_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH201_600x600_1.jpg",
 
     name: "LONG-WEAR CREAM SHADOW STICK",
     rating: "4",
@@ -209,11 +209,15 @@ function appendItems(data) {
     let box = document.createElement("div");
     let image = document.createElement("img");
     image.src = el.url;
-    image.addEventListener("onmouseover", () => {
-      () => {
-        image.src = el.url2;
-      };
-    });
+//
+image.addEventListener("mouseleave", function () {
+  image.src = el.url;
+});
+image.addEventListener("mouseover", function () {
+image.src = el.url2;
+});
+
+//
     let name = document.createElement("p");
     name.innerText = el.name;
     name.style.fontWeight = "bold";
