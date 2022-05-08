@@ -15,3 +15,8 @@ let read = (a)=>{
    console.log(addressDetails)
    localStorage.setItem("addres",JSON.stringify(addressDetails))
  }
+
+ let billAmount = JSON.parse(localStorage.getItem("bill"));
+ document.getElementById("estimatedBill").innerText = `₹ ${billAmount[1]}`
+ document.getElementById("subTotal").innerText = `₹ ${billAmount[0]}`
+ document.getElementById("noOfItems").innerText = `There are (${billAmount[2]}) items in your shoping cart`

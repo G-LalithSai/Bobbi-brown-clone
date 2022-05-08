@@ -51,7 +51,7 @@ let compliData = [
 let compliment = (a) => {
   document.getElementById("box-compli-prod").innerHTML = null;
   compliData.forEach((el, i) => {
-    console.log("i :", i);
+    
 
     if (a === "forward" || a === "null") {
       if (i <= 2) {
@@ -84,12 +84,12 @@ compliment("null");
 document.getElementById("forward").addEventListener("click", fun);
 function fun() {
   compliment("forward");
-  console.log("aa");
+  
 }
 document.getElementById("backward").addEventListener("click", funback);
 function funback() {
   compliment("backward");
-  console.log("aa");
+  
 }
 
 // compli_box - display and hide,
@@ -143,10 +143,8 @@ getProd.forEach((el, index) => {
   i.setAttribute("class", "fa-solid  fa-xmark");
   des.innerText = el.discription;
   price.innerText = `Rs :${el.price}`;
-  //price.style.textd
   rating.innerText = `size : MRP inclusive of all taxes | ${el.size}g`;
   rating.style.color = "#9daabd";
-  //btn.innerText= "ADD TO CART";
   selectPriceDiv.append(select, price);
   imgdiv.append(img);
   removeDiv.append(h3, i);
@@ -158,7 +156,7 @@ getProd.forEach((el, index) => {
     removeFromCart(el, index);
   });
 });
-console.log(sum);
+
 document.querySelector("#noOfProduct").innerText = `(${c})`;
 
 // for rigth box---->
@@ -179,7 +177,7 @@ let hideOrderSummary = () => {
 document.querySelector("#hide").addEventListener("click", hideOrderSummary);
 
 //for hide and display of offercode block;'
-c = 0;
+// c = 0;
 let box2 = document.getElementById("coupon-code");
 let modify = document.getElementById("hide1");
 let hideOffer = () => {
@@ -200,18 +198,18 @@ document.querySelector("#hide1").addEventListener("click", hideOffer);
 let removeFromCart = (el, index) => {
   sum += -+el.porice;
   getProd.splice(index, 1);
-  console.log("getProd :", getProd);
   localStorage.setItem("cart", JSON.stringify(getProd));
   window.location.reload();
 };
-console.log(getProd);
+
 
 // sub-total amount --->
+let amount = []
 let subtotal = document.getElementById("subtotal");
 let estimated_mrp = document.getElementById("estimated_mrp");
 let subtotalAmount = () => {
   subtotal.innerText = `₹ ${sum}`;
-  estimated_mrp.innerText = `₹ ${sum}`;
+  estimated_mrp.innerText = `₹ ${sum + +sum*0.18}`;
   subtotal.style.color = "#000000";
   subtotal.style.fontWeight = "bold";
   subtotal.style.fontSize = "20px";
@@ -219,52 +217,9 @@ let subtotalAmount = () => {
     "Helvetica",
     "Arial",
     "sans-serif";
-};
+   amount.push(sum);
+   amount.push(`${sum + +sum*0.18}`)
+   amount.push(c)
+   localStorage.setItem("bill",JSON.stringify(amount))
+  };
 subtotalAmount(sum);
-
-//  let qi =0;
-// document.getElementById("qty").addEventListener("click",myHidefun)
-// let hide_qty = document.getElementById("hide")
-// function myHidefun()
-// {
-// if(qi%2===0)
-// {  qi++;
-//     hide_qty.style.display = "none";
-// qty.setAttribute("class","fa-solid fa-angle-up");
-// }
-// else if(qi%2!=0)
-// {  qi++;
-//     hide_qty.style.display = "block";
-// qty.setAttribute("class","fa-solid fa-angle-down");
-// }
-
-// }
-
-// document.querySelector("#no2").addEventListener("click",function(){
-//     myfn(this.innerText)
-// })
-// document.querySelector("#no3").addEventListener("click",function(){
-//     myfn(this.innerText)
-// })
-// document.querySelector("#no4").addEventListener("click",function(){
-//     myfn(this.innerText)
-// })
-// document.querySelector("#no5").addEventListener("click",function(){
-//     myfn(this.innerText)
-// })
-// document.querySelector("#no6").addEventListener("click",function(){
-//     myfn(this.innerText)
-// })
-// document.querySelector("#no7").addEventListener("click",function(){
-//     myfn(this.innerText)
-// })
-// document.querySelector("#no8").addEventListener("click",function(){
-//     myfn(this.innerText)
-// })
-
-// function myfn(a)
-
-// {
-
-//     document.getElementById("net_qty").innerText =a;
-// }
