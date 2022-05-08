@@ -1,0 +1,155 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100px;
+}
+.text-white {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#btn {
+    width: 100%;
+    height: 40px;
+    background-color: #343536;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+.text {
+    margin: auto;
+}
+.text-white {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#close {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+}
+
+.active, .dot:hover {
+    background-color: #343536!important;
+}
+.clr{
+    /* border: solid 1px red; */
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.div1{
+    /* border: solid 1px black; */
+    width: 72%;
+    height: 80px;
+    /* display: flex; */
+    margin: auto;
+}
+.div1 nav{
+    /* border: solid 1px red; */
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.deco{
+    text-decoration: none;
+    color: black;
+}
+
+.div2{
+    /* border: solid 1px black; */
+    height: auto;
+    width: 72%;
+    margin: auto;
+    /* margin-top: 20px; */
+    display: flex;
+    gap: 20px;
+}
+.btn1{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    /* margin-right: 10px; */
+}
+.div2 .divA{
+    /* border: solid 1px red; */
+    width: 700px;
+    height: auto;
+    margin-top: 10px;
+}
+.div2 .divB{
+    border: solid 1px red;
+    width: 400px;
+    height: 800px;
+    margin-top: 65px;
+}
+.hor{
+    margin-top: 0px;
+}
+
+.divA h3{
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: bold;
+    /* text-indent: 20px; */
+    letter-spacing: .2em;
+    /* background-color: #eff0f0; */
+}
+.divA .diva{
+    background-color: #eff0f0;;
+    border-top: solid 1px #bbbbb9;
+    border-bottom: solid 1px #bbbbb9;
+    padding: 15px;
+    /* height: 40px; */
+}
+.divb{
+    background-color: #eff0f0;;
+    border-top: solid 1px #bbbbb9;
+    border-bottom: solid 1px #bbbbb9;
+    padding: 15px;
+    /* height: 40px; */
+}
+
+.colo{
+    background-color: none;
+    border-top: solid 1px #bbbbb9;
+    border-bottom: solid 1px #bbbbb9;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+#address{
+    border: solid 1px black;
+    width: 100%;
+    height: 250px;
+    margin-top: 25px;
+}
+.hr{
+    margin: 0px;
+    padding: 0px;
+}
