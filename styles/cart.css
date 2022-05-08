@@ -32,7 +32,7 @@
   height: 80%;
 }
 #cont2 {
-  width: 30%;
+  width: 35%;
   height: auto;
   color: #0a141b;
   border-left: 1px solid rgb(104, 97, 97);
@@ -43,7 +43,7 @@
   width: 70px;
   padding: 5px;
   position: relative;
-  color: red;
+  
 }
 
 #space {
@@ -63,18 +63,10 @@
   justify-content: space-between;
 }
 
-/* for right side container */
-/* #check{
-    
-    margin: auto;
-    border: 3px solid;
-    background-color: grey;
-} */
-
 #check > button {
   display: block;
   width: 90%;
-  padding: 10px 40px 10px 40px;
+  padding: 20px 40px 30px 40px;
   font-weight: bold;
   color: white;
   background-color: #ff4661;
@@ -83,6 +75,11 @@
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 14px;
+}
+#check > button>a{
+  text-decoration: none;
+  color: white;
+  
 }
 #a,
 #b,
@@ -163,14 +160,14 @@
   justify-content: space-between;
 }
 #box-compli-prod {
+  width: 90%;
   display: flex;
   margin: auto;
-  /* border: 1px solid; */
 }
 #box-compli-prod > div {
-  width: 30%;
+  width: 40%;
   margin: auto;
-  /* border: 1px solid red; */
+ 
 }
 #box {
   text-align: center;
@@ -188,7 +185,6 @@
   color: #050505;
 }
 #compliment-box > p {
-  /* background-color: gray; */
   color: #9daabd;
 }
 #head {
@@ -204,32 +200,8 @@
   align-items: center;
 }
 
-/* #no{
-    width: 100px;
-   
-   
-    border: 1px solid;
-}
-#no>div:nth-child(2){
-    border: 1px solid;
-}
-#control{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-  
-}
-/* #hide{
-    width:100%;
-    height: 150px;
-    overflow-y: scroll;
-
-} */
-
 #selectPrice {
   width: 250px;
-
-  /* border: 1px solid; */
   display: flex;
   justify-content: space-between;
   align-items: center;
