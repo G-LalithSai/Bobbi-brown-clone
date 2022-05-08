@@ -215,9 +215,9 @@ function appendItems(data) {
     name.innerText = el.name;
     name.style.fontWeight = "bold";
     let rating = document.createElement("p");
-    rating.innerText = el.rating;
+    rating.innerText = `Rating :${el.rating}`;
     let price = document.createElement("p");
-    price.innerText = el.price;
+    price.innerText = `Rs : ${el.price}`;
     let button = document.createElement("button");
     button.innerText = "ADD TO CART";
     box.append(image, name, rating, price, button);
