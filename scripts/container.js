@@ -53,7 +53,7 @@ let datanew = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPYL03_600x600_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERE012_600x600_1.jpg",
 
     name: "FACE AND CHEEK PALETTE",
     rating: "4",
@@ -61,7 +61,7 @@ let datanew = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E96E40_600x600_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH201_600x600_1.jpg",
 
     name: "LONG-WEAR CREAM SHADOW STICK",
     rating: "4",
@@ -79,7 +79,7 @@ let datamini = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPGN01_600x600_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERE012_600x600_1.jpg",
 
     name: "FACE AND CHEEK PALETTE",
     rating: "4",
@@ -87,7 +87,7 @@ let datamini = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EPH201_1080x1080_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH201_600x600_1.jpg",
 
     name: "LONG-WEAR CREAM SHADOW STICK",
     rating: "4",
@@ -105,7 +105,7 @@ let datatara = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EER904_1080x1080_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERE012_600x600_1.jpg",
 
     name: "FACE AND CHEEK PALETTE",
     rating: "4",
@@ -113,7 +113,7 @@ let datatara = [
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EL1104_1080x1080_0.jpg",
-    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER904_600x600_1.jpg",
+    url2: "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH201_600x600_1.jpg",
 
     name: "LONG-WEAR CREAM SHADOW STICK",
     rating: "4",
@@ -126,28 +126,28 @@ let data2 = [
     head: "LIVE CHAT",
     desc: "Chat with a makeup artist to get product recommendations.",
     link: "CHAT NOW",
-    goto: "",
+    goto: "fav.html",
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/Samples_500x500.jpg",
     head: "SAMPLE ON EVERY PURCHASE",
     desc: "Select a free sample at checkout with any order*** (Conditions Apply)",
     link: "SHOP NOW",
-    goto: "",
+    goto: "new.html",
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/Shipping-&-Returns_500x500.jpg",
     head: "FREE SHIPPING",
     desc: "Get your favorites delivered straight to your door - every shipment on us",
     link: "SHOP NOW",
-    goto: "",
+    goto: "fav.html",
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/Virtual-Consults_500x500.jpg",
     head: "VIRTUAL CONSULTATION",
     desc: "Get personalized recommendation on our bestsellers with Virtual Artistry Consultations",
     link: "BOOK NOW",
-    goto: "",
+    goto: "new.html",
   },
 ];
 
@@ -193,6 +193,9 @@ function appendLAst(data) {
     let link = document.createElement("p");
     link.innerText = el.link;
     link.className = "downlink";
+    link.addEventListener("click",()=>{
+      window.location.href = el.goto;
+    })
     box.append(image, caption, description, link);
     division.append(box);
   });
@@ -206,18 +209,22 @@ function appendItems(data) {
     let box = document.createElement("div");
     let image = document.createElement("img");
     image.src = el.url;
-    image.addEventListener("onmouseover", () => {
-      () => {
-        image.src = el.url2;
-      };
-    });
+//
+image.addEventListener("mouseleave", function () {
+  image.src = el.url;
+});
+image.addEventListener("mouseover", function () {
+image.src = el.url2;
+});
+
+//
     let name = document.createElement("p");
     name.innerText = el.name;
     name.style.fontWeight = "bold";
     let rating = document.createElement("p");
-    rating.innerText = el.rating;
+    rating.innerText = `Rating :${el.rating}`;
     let price = document.createElement("p");
-    price.innerText = el.price;
+    price.innerText = `Rs : ${el.price}`;
     let button = document.createElement("button");
     button.innerText = "ADD TO CART";
     box.append(image, name, rating, price, button);
@@ -226,4 +233,26 @@ function appendItems(data) {
 }
 appendItems(datanew);
 
+document.getElementById("slide1").addEventListener("click",()=>{
+  window.location.href = "new.html";
+});
+document.getElementById("slide2").addEventListener("click",()=>{
+  window.location.href = "fav.html";
+})
+document.getElementById("slide3").addEventListener("click",()=>{
+  window.location.href = "fav.html";
+})
+
+document.getElementById("button1").addEventListener("click",()=>{
+  window.location.href = "new.html";
+});
+document.getElementById("button2").addEventListener("click",()=>{
+  window.location.href = "fav.html";
+})
+document.getElementById("button3").addEventListener("click",()=>{
+  window.location.href = "new.html";
+})
+document.getElementById("button4").addEventListener("click",()=>{
+  window.location.href = "fav.html";
+})
 // container ends
