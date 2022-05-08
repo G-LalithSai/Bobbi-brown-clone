@@ -32,7 +32,7 @@
   height: 80%;
 }
 #cont2 {
-  width: 30%;
+  width: 35%;
   height: auto;
   color: #0a141b;
   border-left: 1px solid rgb(104, 97, 97);
@@ -43,7 +43,7 @@
   width: 70px;
   padding: 5px;
   position: relative;
-  color: red;
+  
 }
 
 #space {
@@ -63,18 +63,10 @@
   justify-content: space-between;
 }
 
-/* for right side container */
-/* #check{
-    
-    margin: auto;
-    border: 3px solid;
-    background-color: grey;
-} */
-
 #check > button {
   display: block;
   width: 90%;
-  padding: 10px 40px 10px 40px;
+  padding: 20px 40px 30px 40px;
   font-weight: bold;
   color: white;
   background-color: #ff4661;
@@ -83,6 +75,11 @@
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 14px;
+}
+#check > button>a{
+  text-decoration: none;
+  color: white;
+  
 }
 #a,
 #b,

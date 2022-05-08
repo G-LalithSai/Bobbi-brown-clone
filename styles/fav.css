@@ -15,6 +15,13 @@
      color: white;
     width: 100%;
 }
+#home{
+    margin-left:20px ;
+}
+#home > a{
+    text-decoration: none;
+    color: black;
+}
 #cont1{
     display: flex;
     justify-content:space-between;
@@ -32,6 +39,9 @@
     font-weight: bold;
 }
 #products{
+    width: 85%;
+    margin: auto;
+    /* border:1px solid; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(auto);
