@@ -41,6 +41,10 @@ let data=[{"image":"https://www.bobbibrown.in/media/export/cms/products/v2_1080x
 
 ];
 
+let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+let create = (a)=>{
+    return document.createElement(a)
+};
 
 let showing = (data)=>{
     document.getElementById("show").innerHTML="";
@@ -113,10 +117,19 @@ let showing = (data)=>{
         box2.append(but1);
         
         box1.append(div, div1,box2);
-        document.getElementById("show").append(box1);
-    })
-};
-showing(data);
+        document.getElementById("show").append(box1); 
+
+        but1.addEventListener("click", function(){
+            addToCart(elem);
+        })
+    });
+}
+
+let addToCart = (el)=>{
+    cartData.push(el);
+       localStorage.setItem("cart",JSON.stringify(cartData))
+     }
+// showing(data);
 
     let rateSt = ()=>{
         let value = document.getElementById("select").value;
