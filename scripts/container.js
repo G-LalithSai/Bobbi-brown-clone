@@ -126,28 +126,28 @@ let data2 = [
     head: "LIVE CHAT",
     desc: "Chat with a makeup artist to get product recommendations.",
     link: "CHAT NOW",
-    goto: "",
+    goto: "fav.html",
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/Samples_500x500.jpg",
     head: "SAMPLE ON EVERY PURCHASE",
     desc: "Select a free sample at checkout with any order*** (Conditions Apply)",
     link: "SHOP NOW",
-    goto: "",
+    goto: "new.html",
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/Shipping-&-Returns_500x500.jpg",
     head: "FREE SHIPPING",
     desc: "Get your favorites delivered straight to your door - every shipment on us",
     link: "SHOP NOW",
-    goto: "",
+    goto: "fav.html",
   },
   {
     url: "https://www.bobbibrown.in/media/export/cms/Virtual-Consults_500x500.jpg",
     head: "VIRTUAL CONSULTATION",
     desc: "Get personalized recommendation on our bestsellers with Virtual Artistry Consultations",
     link: "BOOK NOW",
-    goto: "",
+    goto: "new.html",
   },
 ];
 
@@ -193,6 +193,9 @@ function appendLAst(data) {
     let link = document.createElement("p");
     link.innerText = el.link;
     link.className = "downlink";
+    link.addEventListener("click",()=>{
+      window.location.href = el.goto;
+    })
     box.append(image, caption, description, link);
     division.append(box);
   });
@@ -226,4 +229,26 @@ function appendItems(data) {
 }
 appendItems(datanew);
 
+document.getElementById("slide1").addEventListener("click",()=>{
+  window.location.href = "new.html";
+});
+document.getElementById("slide2").addEventListener("click",()=>{
+  window.location.href = "fav.html";
+})
+document.getElementById("slide3").addEventListener("click",()=>{
+  window.location.href = "fav.html";
+})
+
+document.getElementById("button1").addEventListener("click",()=>{
+  window.location.href = "new.html";
+});
+document.getElementById("button2").addEventListener("click",()=>{
+  window.location.href = "fav.html";
+})
+document.getElementById("button3").addEventListener("click",()=>{
+  window.location.href = "new.html";
+})
+document.getElementById("button4").addEventListener("click",()=>{
+  window.location.href = "fav.html";
+})
 // container ends
