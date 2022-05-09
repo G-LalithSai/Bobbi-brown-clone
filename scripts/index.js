@@ -207,6 +207,8 @@ document
   .addEventListener("click", function () {
     let email = document.getElementById("nb-reg-login-email").value;
     let password = document.getElementById("nb-reg-login-pass").value;
+    console.log(userData.email, email);
+    console.log(userData.password, password);
     console.log(userData.email === email && userData.password === password);
     if (userData.email === email && userData.password === password) {
       alert("Login Successful");
