@@ -589,12 +589,12 @@ let navbar = () => {
                 </div>
               </li>
               <li>
-                <a href="#">SKINCARE</a>
+                <a href="./skincare.html">SKINCARE</a>
                 <div class="menu-sub">
                   <div class="menu-sub-inner">
                     <ul class="sub-category">
                       <li>
-                        <a href="#">
+                        <a href="./skincare.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/skincare/Nagivation-Tiles-Skincare-Best-Sellers_@2x.jpg"
@@ -609,7 +609,7 @@ let navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="./skincare.html">
                           <div>
                             <img
                               src="https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/skincare/BB-PC-GNAV-Skincare_Bestsellers_600x300_@2x.jpg"
@@ -622,16 +622,16 @@ let navbar = () => {
                       </li>
                       <li>
                         <div class="sub-menu-main">
-                          <a href="#">
+                          <a href="./skincare.html">
                             <h5>SKINCARE</h5>
                           </a>
                           <ul class="sub-menu">
-                            <li><a href="#">Moisturizers</a></li>
-                            <li><a href="#">Serums & Treatment</a></li>
-                            <li><a href="#">Cleansers & Toner</a></li>
-                            <li><a href="#">Lip & Eye Care</a></li>
-                            <li><a href="#">SPF</a></li>
-                            <li><a href="#">Skincare Guide</a></li>
+                            <li><a href="./skincare.html">Moisturizers</a></li>
+                            <li><a href="./skincare.html">Serums & Treatment</a></li>
+                            <li><a href="./skincare.html">Cleansers & Toner</a></li>
+                            <li><a href="./skincare.html">Lip & Eye Care</a></li>
+                            <li><a href="./skincare.html">SPF</a></li>
+                            <li><a href="./skincare.html">Skincare Guide</a></li>
                           </ul>
                         </div>
                       </li>
