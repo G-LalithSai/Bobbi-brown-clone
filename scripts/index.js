@@ -200,7 +200,7 @@ document
   });
 // navbar end
 
-let userData = JSON.parse(localStorage.getItem("userData")) || [];
+let userData = JSON.parse(localStorage.getItem("userData"));
 
 document
   .getElementById("nb-reg-login-check")
