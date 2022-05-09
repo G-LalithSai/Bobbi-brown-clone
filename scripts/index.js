@@ -199,3 +199,49 @@ document
     document.getElementById("nb-reg1").style.display = "none";
   });
 // navbar end
+
+let userData = JSON.parse(localStorage.getItem("userData")) || [];
+
+document
+  .getElementById("nb-reg-login-check")
+  .addEventListener("click", function () {
+    let email = document.getElementById("nb-reg-login-email").value;
+    let password = document.getElementById("nb-reg-login-pass").value;
+    console.log(userData.email, email);
+    console.log(userData.password, password);
+    console.log(userData.email === email && userData.password === password);
+    if (userData.email === email && userData.password === password) {
+      alert("Login Successful");
+      document.getElementById("nb-user-data").innerText = userData.email;
+      document.getElementById("nb-reg").style.display = "none";
+      document.getElementById("nb-reg1").style.display = "none";
+      document.getElementById("nb-reg-tc").style.display = "none";
+      document.getElementById("nb-new-reg").style.display = "none";
+      document.getElementById("nb-new-reg1").style.display = "none";
+      document.getElementById("nb-reg-login-user").style.display = "block";
+    } else {
+      alert("Invalid Email or Password");
+    }
+  });
+document
+  .getElementById("nb-reg-login-check1")
+  .addEventListener("click", function () {
+    let email = document.getElementById("nb-reg-login-email1");
+    let password = document.getElementById("nb-reg-login-pass1");
+    let cb = document.getElementById("nb-reg-cb-check").checked;
+
+    if (cb) {
+      let data = {
+        email: email.value,
+        password: password.value,
+      };
+      localStorage.setItem("userData", JSON.stringify(data));
+      alert("Registration Successful");
+      document.getElementById("nb-new-reg").style.display = "block";
+      document.getElementById("nb-reg").style.display = "block";
+      document.getElementById("nb-new-reg1").style.display = "none";
+      document.getElementById("nb-reg1").style.display = "none";
+    } else {
+      alert("Please agree to the terms and conditions");
+    }
+  });

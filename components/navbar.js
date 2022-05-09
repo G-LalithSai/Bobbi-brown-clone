@@ -1,5 +1,5 @@
 let navbar = () => {
-  return `<div id="nb-p1">
+  return `      <div id="nb-p1">
         <ul id="navbar-main1">
           <li class="nb-em-hover">
             <div>
@@ -246,7 +246,7 @@ let navbar = () => {
                           Tell us your birthday and we'll send you a special
                           surprise when it comes around!
                         </p>
-                        <p>
+                        <p><input type="checkbox" id="nb-reg-cb-check">
                           By clicking "Register", I agree to the Bobbi Brown
                           <a href="#">Terms and Conditions</a> and
                           <a href="#">Privacy Policy.</a>
@@ -285,10 +285,19 @@ let navbar = () => {
                     <h5>Don't have an account?</h5>
                     <button id="nb-new-acc-reg">Register now</button>
                   </div>
-
                   <div id="nb-new-reg1">
                     <h5>Already have an account?</h5>
                     <button id="nb-new-acc-reg1">LOG IN</button>
+                  </div>
+                  <div id="nb-reg-login-user">
+                    <div>
+                      <img
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                        alt=""
+                      />
+                      <h4>Welcome Back,</h4>
+                      <h3 id="nb-user-data"></h3>
+                    </div>
                   </div>
                 </div>
               </div>

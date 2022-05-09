@@ -6,14 +6,14 @@ let read = (a)=>{
        name:read("fname") +" "+read("lname"),
        street :read("sname"),
        HouseNumber :read("hnumber"),
-       postalConde : read("pcode"),
+       postalcode : read("pcode"),
        city : read("city"),
        state : read("state"),
        pnumber : read("pnumber"),
        hnumber : read("hnumber")
    }
    console.log(addressDetails)
-   localStorage.setItem("addres",JSON.stringify(addressDetails))
+   localStorage.setItem("address",JSON.stringify(addressDetails))
  }
 
  let billAmount = JSON.parse(localStorage.getItem("bill"));

@@ -652,5 +652,15 @@
     margin: 0;
   }
 }
-@media only screen and (max-width: 800px) {
+
+#nb-reg-login-user {
+  display: none;
+  text-align: center;
+  font-size: 25px;
+}
+
+#nb-reg-login-user img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
