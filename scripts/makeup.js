@@ -2,14 +2,18 @@ let a =
   "May Beauty Event:30% off Vitamin Enriched Eye Base And 40% off selcect grow.";
 let b =
   "Get 15% off Your first order plus free shiping everyday when you join BB Access.";
+
   let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
 let arr = [a, b];
+
 let i = 0;
 let offers = document.querySelector("#offers");
 let backward = document.querySelector("#backward");
 let forward = document.querySelector("#forward");
 let content = document.querySelector("#content");
 content.innerHTML = arr[i];
+
 let id = setInterval(function () {
   content.innerHTML = arr[i];
   i++;
